@@ -37,7 +37,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-
     
 }
 
@@ -60,7 +59,7 @@ body {
     width: 1em;
 }
 
-.sidebar .footer {
+.sidebar-section .footer {
     font-size: 14px;
     margin-bottom: 2vh;
 }
@@ -77,6 +76,7 @@ a {
     justify-content: center;
     
     flex: 5;
+    
     
 }
 
@@ -103,5 +103,95 @@ a {
     background-color: white;
     box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
     
+}
+
+.form > p {
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form > * {
+    margin-left: var(--form-left-margin);
+}
+
+.input-wrapper {
+    display:flex;
+    flex-direction: column;
+    width: 250px;
+    font-size: 12px;
+}
+
+
+
+input[type="text"] {
+    border: 1px solid #E5E7EB;
+    font-size: 16px;
     
+    padding: 5px;
+    border-radius: 4px;
+}
+
+input[type="text"]:focus {
+    outline: none !important;
+    border-color: blue;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    font-weight: bold;
+}
+
+.input-wrapper {
+    margin-bottom: 30px;
+    
+}
+
+label {
+    letter-spacing: 2px;
+}
+
+.input-wrapper:nth-child(1){
+    margin-right: 64px;
+}
+
+.input-wrapper:nth-child(2){
+    margin-right: var(--form-left-margin);
+}
+
+.submit {
+    margin-top: 42px;
+}
+
+input[type="submit"] {
+    background-color: #596D48;
+    padding: 16px 48px;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+
+    margin-bottom: 32px;
+}
+
+input[type="submit"]:hover {
+    cursor:pointer;
+}
+
+.submit p {
+    font-size: 18px;
+}
+
+.submit p a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
 }

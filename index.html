@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="sidebar-section">
@@ -33,13 +34,42 @@
         <div class="form">
             <p>Let's do this!</p>
 
-            <form id="myform" method="get" action="something.php">
-                <label for="name">FIRST NAME</label>
-                <input type="text" name="name" />
+            <form id="sign-up-form" method="get" action="">
+                <div class="input-row">
+                    <div class="input-wrapper">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" required>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-wrapper">
+                        <label for="email">EMAIL</label>
+                        <input type="text" id="email" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="text" id="phone-number" required>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-wrapper">
+                        <label for="password">PASSWORD</label>
+                        <input type="text" id="password" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="text" id="confirm-password" required>
+                    </div>
+                </div>
             </form>
         </div>
         <div class="submit">
-            <input type="submit" form="myform" value="Update"/>
+            <input type="submit" form="sign-up-form" value="Create Account"/>
+            <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
 </body>
